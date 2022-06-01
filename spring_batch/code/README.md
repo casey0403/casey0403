@@ -31,6 +31,19 @@
 DB 하나당 sessionFactory, transactionManager 쌍으로 생성해야한다.
 프로젝트 내 새로운 DB 추가시, yml추가, dataSource추가, myBatis 추가해야한다. (aspect는 api 프로젝트일때만)
 
+![photo_2022-06-01_20-10-13](https://user-images.githubusercontent.com/104426801/171391165-42b5c877-c64f-49cd-8247-a7524acd0502.jpg)
+![photo_2022-06-01_20-10-20](https://user-images.githubusercontent.com/104426801/171391171-fd3ffbeb-83c8-488b-bd9a-6e23bc6ea1a9.jpg)
+![photo_2022-06-01_20-10-24](https://user-images.githubusercontent.com/104426801/171391178-6c59301a-1d40-49d4-9b50-8eb14d372680.jpg)
+
+*****
+
+## 정리
+![photo_2022-06-01_20-13-08](https://user-images.githubusercontent.com/104426801/171391651-37d21c78-db90-49ca-b139-4bf06718d71e.jpg)
+
+
+
+*****
+
 
 (첨언)
 * 보통은 Reader, Writer 만 사용할거임
