@@ -29,6 +29,7 @@
 
 * 세세한 구현체 설정
 DB 하나당 sessionFactory, transactionManager 쌍으로 생성해야한다.
+프로젝트 내 새로운 DB 추가시, yml추가, dataSource추가, myBatis 추가해야한다. (aspect는 api 프로젝트일때만)
 
 
 (첨언)
