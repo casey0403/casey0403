@@ -179,13 +179,7 @@ Spring Batch에는 6개의 Meta Table과 3개의 Sequence Table이 존재합니�
 ### SEQUENCE
 BATCH_JOB_INSTANCE, BATCH_JOB_EXECUTION및 BATCH_STEP_EXECUTION의 Primary Key는 시퀀스에 의해 생성됩니다.
 
-
-
-
-*출처 및 참고*
-https://khj93.tistory.com/entry/Spring-Batch%EB%9E%80-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
-https://deeplify.dev/back-end/spring/batch-architecture-and-components
-
+*****
 
 ### 스프링 배치 탄생 배경
 웹 기반의 MSA에 집중을 하고 있던 Spring source(현 Pivotal)은 Java 기반의 일괄처리 프레임워크 제작에는 집중하지 못하였습니다. 그래서 많은 기업들이 일괄처리를 하기 위해 자체 사내 솔루션을 개발하는 경우가 많았습니다.
@@ -221,4 +215,10 @@ https://deeplify.dev/back-end/spring/batch-architecture-and-components
 - Batch Infrastructure: 개발자와 어플리케이션에서 사용하는 일반적인 Reader와 Writer 그리고 RetryTemplate과 같은 서비스를 포함
 스프링 배치는 계층 구조가 위와 같이 설계되어 있기 때문에 개발자는 Application 계층의 비즈니스 로직에 집중할 수 있고, 배치의 동작과 관려된 것은 Batch Core에 있는 클래스들을 이용하여 제어할 수 있습니다.
 
+
+
+
+*출처 및 참고*
+https://khj93.tistory.com/entry/Spring-Batch%EB%9E%80-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+https://deeplify.dev/back-end/spring/batch-architecture-and-components
 
