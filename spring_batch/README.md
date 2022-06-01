@@ -112,4 +112,17 @@ Chunk 지향 처리 Example을 확인하면 @JobScope와 @StepScope Annotation�
 
 @JobScope와 @StepScope는 Singleton 패턴이 아닌 Annotation이 명시된 메소드의 실행 시점에 Bean이 생성되게 됩니다. 또한 @JobScope와 @StepScope Bean이 생성 될 때 JobParameter가 생성되기 때문에 JobParameter 사용하기 위해선 반드시 Scope를 지정해주어야 합니다. 이는 LateBinding을 하여 JobParameter를 비즈니스 로직 단계에서 할당하여 보다 유연한 설계를 가능하게 하고 서로 다른 Step이 서로를 침범하지 않고 병렬로 실행되게 하기 위함입니다.
 
+*****
+## Spring Meta Table
+Spring Batch에는 6개의 Meta Table과 3개의 Sequence Table이 존재합니다. 이는 Spring BatchJob이 실행 될 때마다 실행된 Job에 대한 다양한 정보들이 저장되게 됩니다.
+
+일반적으로는 해당 Meta Table이 없이는 Spring Batch Framework를 실행시킬 수 없으나 이는 필요에 따라 커스터마이징을 통해 Meta Table이 없이도 실행되게 만들 수 있습니다
+(하지만 Spirng Batch에서 해당 Table이 없이 실행되지 않게 했다는 건 그만큼 중요한 정보들이 저장 된다는 것이겠죠?)
+
+
+![image](https://user-images.githubusercontent.com/104426801/171370699-ccb0fec0-9c9f-452f-84b7-ca8eceae8564.png)
+
+
+
+
 
