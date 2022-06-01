@@ -24,4 +24,14 @@
 ![image](https://user-images.githubusercontent.com/104426801/171385869-d93152aa-5f2f-474e-a0a2-a73bd7aeb48e.png)
 
 
-* ChunkSize : 1000 ->
+* ChunkSize : 1000 일 경우, page도 1000개 권장.
+* 1000건이 끝나고 commit 된다. 1000건 단위(bulk 단위)로 Rollback일어남.
+
+* 세세한 구현체 설정
+DB 하나당 sessionFactory, transactionManager 쌍으로 생성해야한다.
+
+
+(첨언)
+* 보통은 Reader, Writer 만 사용할거임
+* 만들어서 돌려보는게 좋다
+
