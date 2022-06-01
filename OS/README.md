@@ -13,3 +13,8 @@ AS NB
 또한 NodeJS의 이벤트 루프와 같이 비동기 방식도 내부 구현을 뜯어보면 동기적인 패턴이 포함되어있기 때문에 남발하게되면 어딘가에 병목이 생길 수도 있다.
 
 https://evan-moon.github.io/2019/09/19/sync-async-blocking-non-blocking/
+
+
+제어권이 없다 = 프로세스 유휴상태
+유휴란 라틴어 어원.
+유휴상태 = Idle 상태 = 사용되지 않는 상태
