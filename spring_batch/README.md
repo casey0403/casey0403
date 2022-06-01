@@ -1,7 +1,7 @@
 # Spring Batch
 
 
-[스프링 배치 구조]
+[스프링 배치 ]
 ![spring-batch-architecture](https://user-images.githubusercontent.com/104426801/171371382-0232069a-76e0-4c79-a742-34c0df1a0140.jpg)
 - 노란색은 스케줄러 또는 데이터베이스와 같은 외부 애플리케이션을 나타냅니다. 스케줄링이라는 점은 스프링 배치와 별도로 고려되어야한다는 점에 유의하는 것이 중요합니다.
 - 빨간색으로 표시한 요소들은 어플리케이션 서비스를 나타냅니다. 대부분의 서비스들은 스프링 배치에서 제공하고 있지만, 원하는 구조가 있다면 입맛에 맞게 디자인 할 수 있습니다.
@@ -139,6 +139,15 @@ Spring Batch에서의 Job은 여러가지 Step의 모음으로 구성되어 있�
 
 ![다운로드](https://user-images.githubusercontent.com/104426801/171369300-1ced0f0a-aca1-4253-8bcc-e8bc9f98598f.png)
 
+- 일반적으로 스프링 배치는 대용량 데이터를 다루는 경우가 많기 때문에 Tasklet보다 상대적으로 트랜잭션의 단위를 짧게 하여 처리할 수 있는 Reader, Proccessor, Writer를 이용한 Chunk 지향 프로세싱을 이용합니다.
+
+### 정리 [Job, Step, Tasklet]
+![spring-batch-job](https://user-images.githubusercontent.com/104426801/171375330-5fc8a769-d6d0-495c-999a-b284e70c30cc.jpg)
+- Job: 배치 처리 과정을 하나의 단위로 만들어 표현한 객체이고 여러 Step 인스턴스를 포함하는 컨테이너
+- Step: Step은 실직적인 배치 처리를 정의하고 제어 하는데 필요한 모든 정보가 있는 도메인 객체
+- Tasklet: Step안에서 수행될 비즈니스 로직 전략의 인터페이스
+
+
 cf)
 1. Spring Batch에는 다양한 ItemReader와 ItemWriter가 존재합니다. 대용량 배치 처리를 하게 되면 Item을 읽어 올 때 Paging 처리를 하는게 효과적입니다. Spring Batch Reader에서는 이러한 Paging 처리를 지원하고 있습니다. 또한 적절한 Paging처리와 Chunk Size(한번에 처리 될 트랜잭션)를 설정하여 더욱 효과적인 배치 처리를 할 수 있습니다.
 
@@ -160,8 +169,11 @@ Spring Batch에는 6개의 Meta Table과 3개의 Sequence Table이 존재합니�
 일반적으로는 해당 Meta Table이 없이는 Spring Batch Framework를 실행시킬 수 없으나 이는 필요에 따라 커스터마이징을 통해 Meta Table이 없이도 실행되게 만들 수 있습니다
 (하지만 Spirng Batch에서 해당 Table이 없이 실행되지 않게 했다는 건 그만큼 중요한 정보들이 저장 된다는 것이겠죠?)
 
-
+[스프링 배치 메타 테이블 이미지1]
 ![image](https://user-images.githubusercontent.com/104426801/171370699-ccb0fec0-9c9f-452f-84b7-ca8eceae8564.png)
+
+[스프링 배치 메타 테이블 이미지2]
+![spring-batch-meta-tables](https://user-images.githubusercontent.com/104426801/171374925-30616f26-6894-4f51-bc9f-cfc96cc87fbb.jpg)
 
 
 ### SEQUENCE
@@ -190,14 +202,23 @@ https://deeplify.dev/back-end/spring/batch-architecture-and-components
 #### 스프링 배치가 제공할 수 있는 비즈니스 시나리오
 1. 주기적인 배치 프로세스
 2. 동시적인 배치 프로세스: 작업의 병렬 처리
-단계별 엔터프라이즈 메시지 기반 처리
-대규모 작업에 대한 병렬 배치 프로세스
-실패 후 수동 또는 예약 된 재시작
-단계별 순차 처리
-부분 처리: 레코드 건너 뛰기 (예: 롤백 시)
-배치 작업 처리의 단위가 작은 경우, 기존 저장 프로시저/스크립트가 있는 경우 전체 배치에 대한 트랜잭션 처리
+3. 단계별 엔터프라이즈 메시지 기반 처리
+4. 대규모 작업에 대한 병렬 배치 프로세스
+5. 실패 후 수동 또는 예약 된 재시작
+6. 단계별 순차 처리
+7. 부분 처리: 레코드 건너 뛰기 (예: 롤백 시)
+8. 배치 작업 처리의 단위가 작은 경우, 기존 저장 프로시저/스크립트가 있는 경우 전체 배치에 대한 트랜잭션 처리
 스프링 배치 프레임워크는 위와 같이 다양한 비즈니스 시나리오를 처리할 수 있도록 설계되어 있습니다.
 
+### 스프링 배치 계층 구조
+[spring batch structure]
+![spring-batch-structure](https://user-images.githubusercontent.com/104426801/171374712-832b5bd0-5aa6-4759-a4cc-7c9704413ba7.jpg)
 
+스프링 배치 프레임워크는 확장성과 최종사용자를 염두해두고 설계되었기 때문에 위와 같이 Application, Batch Core 그리고 Batch Infrastructure로 설계되었습니다.
+
+- Application: 개발자가 작성한 모든 배치 작업과 사용자 정의 코드 포함
+- Batch Core: 배치 작업을 시작하고 제어하는데 필요한 핵심 런타임 클래스 포함 (JobLauncher, Job, Step)
+- Batch Infrastructure: 개발자와 어플리케이션에서 사용하는 일반적인 Reader와 Writer 그리고 RetryTemplate과 같은 서비스를 포함
+스프링 배치는 계층 구조가 위와 같이 설계되어 있기 때문에 개발자는 Application 계층의 비즈니스 로직에 집중할 수 있고, 배치의 동작과 관려된 것은 Batch Core에 있는 클래스들을 이용하여 제어할 수 있습니다.
 
 
