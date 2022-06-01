@@ -20,3 +20,8 @@
 ![image](https://user-images.githubusercontent.com/104426801/171383401-b019f423-ebfa-4af4-86ba-091dc22ceb8a.png)
 
 
+
+![image](https://user-images.githubusercontent.com/104426801/171385869-d93152aa-5f2f-474e-a0a2-a73bd7aeb48e.png)
+
+
+* ChunkSize : 1000 ->
