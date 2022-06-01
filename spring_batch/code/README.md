@@ -19,9 +19,7 @@
 - job Bean 등록
 ![image](https://user-images.githubusercontent.com/104426801/171383401-b019f423-ebfa-4af4-86ba-091dc22ceb8a.png)
 
-
-
-![image](https://user-images.githubusercontent.com/104426801/171385869-d93152aa-5f2f-474e-a0a2-a73bd7aeb48e.png)
+![photo_2022-06-01_20-15-30](https://user-images.githubusercontent.com/104426801/171392073-af2d1ab3-a818-4485-ba25-47300335c9d3.jpg)
 
 
 * ChunkSize : 1000 일 경우, page도 1000개 권장.
