@@ -141,7 +141,7 @@ Spring Batch에서의 Job은 여러가지 Step의 모음으로 구성되어 있�
 
 - 일반적으로 스프링 배치는 대용량 데이터를 다루는 경우가 많기 때문에 Tasklet보다 상대적으로 트랜잭션의 단위를 짧게 하여 처리할 수 있는 Reader, Proccessor, Writer를 이용한 Chunk 지향 프로세싱을 이용합니다.
 
-### 정리 [Job, Step, Tasklet]
+### Job, Step, Tasklet 정리
 ![spring-batch-job](https://user-images.githubusercontent.com/104426801/171375330-5fc8a769-d6d0-495c-999a-b284e70c30cc.jpg)
 - Job: 배치 처리 과정을 하나의 단위로 만들어 표현한 객체이고 여러 Step 인스턴스를 포함하는 컨테이너
 - Step: Step은 실직적인 배치 처리를 정의하고 제어 하는데 필요한 모든 정보가 있는 도메인 객체
