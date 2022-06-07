@@ -18,3 +18,4 @@ https://evan-moon.github.io/2019/09/19/sync-async-blocking-non-blocking/
 제어권이 없다 = 프로세스 유휴상태
 유휴란 라틴어 어원.
 유휴상태 = Idle 상태 = 사용되지 않는 상태
+
