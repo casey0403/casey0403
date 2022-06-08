@@ -1,4 +1,6 @@
-## [Thymeleaf]Layout을 이용해 화면 구성하기(SpringBoot)
+# [Thymeleaf]Layout을 이용해 화면 구성하기(SpringBoot)
+
+admin 자산관리 page를 작성하는 도중, 코드리뷰시간에 알아뒀으면 하는 부분으로 캐치해주셔서 간략히 파악해봄.
 
 1. 레이아웃을 위한 Dependency 추가
 implementation('nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect')
