@@ -28,7 +28,7 @@ REST는 자원을 다루고 activate는 자원이 아니다.
 method 이름이 body message 안에도 포함될 것이다. 분명히 Restful하지 않다.
 
 
-### 우리는 RESTfulnesss를 신경쓰는가?
+### 우리는 RESTfulness를 신경쓰는가?
 얼마나 이 API가 유용한지는 얼마나 RESTful한가와 전혀 상관이 없다고 생각한다. "HTTP 전송 데이터" Application을 설명할 때는 
 Restful을 신경써야한다. 그렇지 않을 수도 있기때문에.
 REST를 포함하는 어떤 것이든 살펴봐라. 왜냐하면 REST는 때때로 채택되기 매우 어려운 아주 구체적인 기준을 가지고 있다. 그래서 이러한 주제에
