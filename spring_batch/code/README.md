@@ -2,7 +2,7 @@
 
 ## .yml
 - Batch가 반복실행될 시간 주기 설정
-- 초 분 시 일 월 년 순서.    
+- 초 분 시 일 월 요일 순서.    
 ![photo_2022-06-01_19-13-32](https://user-images.githubusercontent.com/104426801/171381724-f4fa5773-bcd5-4da1-9d58-b7a3a7e0dc5c.jpg)
 
 ![image](https://user-images.githubusercontent.com/104426801/171381705-8454b9ba-2087-40c3-b7f9-6d0e8bd18781.png)
