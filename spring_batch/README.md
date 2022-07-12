@@ -223,6 +223,14 @@ https://khj93.tistory.com/entry/Spring-Batch%EB%9E%80-%EC%9D%B4%ED%95%B4%ED%95%9
 https://deeplify.dev/back-end/spring/batch-architecture-and-components
 
 
+
+### Batch Job 구성
+![image](https://user-images.githubusercontent.com/104426801/178441838-35297b8d-175a-4f33-b260-cd55adf130ce.png)
+
+### Step-Tasklet vs Step-Chunk단위 Item(3)
+![image](https://user-images.githubusercontent.com/104426801/178442056-5d44f2a7-4833-44c6-8947-8653db33bb98.png)
+
+
    
 https://jojoldu.tistory.com/328?category=902551
 
