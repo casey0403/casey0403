@@ -230,6 +230,15 @@ https://deeplify.dev/back-end/spring/batch-architecture-and-components
 ### Step-Tasklet vs Step-Chunk단위 Item(3)
 ![image](https://user-images.githubusercontent.com/104426801/178442056-5d44f2a7-4833-44c6-8947-8653db33bb98.png)
 
+1. STEP - ItemReader, ItemProcessor, ItemWriter
+1) 보편적인 배치 조합
+2) 대부분의 배치구현을 이 조합으로 구현함
+
+2. STEP - Tasklet
+1) 데이터가 많지 않을 경우
+2) 단순한 로직
+3) chunk 단위의 트랜잭션 관리 등이 필요없을 경우
+
 
    
 https://jojoldu.tistory.com/328?category=902551
