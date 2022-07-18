@@ -31,7 +31,8 @@ Publisher는 topic에 대한 정보만 알고있고, Subscriber도 topic만 바�
 
 ![image](https://user-images.githubusercontent.com/104426801/179470160-c0b2e932-ab08-4c9d-b32a-f4f7169b5983.png)
 
-
+(출처)
+https://devcheon.tistory.com/73 
 
 
 
