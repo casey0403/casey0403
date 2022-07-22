@@ -1,6 +1,6 @@
 # Couchbase
 
-## RDBMX_NORMAL SQL
+## RDBMS_Normal SQL
 * DB1
   - schema1 
     + table1 
