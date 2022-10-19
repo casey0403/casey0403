@@ -5,3 +5,6 @@ linux명령어 중 vi를 통해 들어갈 수 있음
 
 (ex)
 vi tomcat_start.sh
+
+
+![image](https://user-images.githubusercontent.com/104426801/196579708-9a43f1b6-67fa-45df-b919-0e4d24d6d10e.png)
