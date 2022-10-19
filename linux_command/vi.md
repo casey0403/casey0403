@@ -8,3 +8,7 @@ vi tomcat_start.sh
 
 
 ![image](https://user-images.githubusercontent.com/104426801/196579708-9a43f1b6-67fa-45df-b919-0e4d24d6d10e.png)
+
+
+(참조)너무나도 잘 정리되어있는 블로그!
+https://blockdmask.tistory.com/m/25
