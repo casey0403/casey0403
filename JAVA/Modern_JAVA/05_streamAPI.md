@@ -16,4 +16,4 @@
 - Why ? 중간 연산 작업과 함께 병렬 처리가 가능하기 때문에 **데이터 정합성** 확보.
 
 
-- doubld형 DoubleStream(& int, long ) 자동 박싱/언박싱 방지. 각각의 기본형 데이터 처리에 특화.
+- doubld형 DoubleStream(& int, long ) 자동 박싱/언박싱 방지. 각각의 기본형 데이터 처리에 특화. sum, max, min 
