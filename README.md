@@ -15,8 +15,7 @@
     </div>
 </div><br>
 
-[<img align="left" alt="SOKURI_CODE | velog" width="48px" src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=000000" />][Gmail]
+<!-- Contact -->
 [<img align="left" alt="SOKURI_CODE | LinkedIn" width="48px" src="https://img.icons8.com/color/48/000000/linkedin.png" />][Linkedin]
 
-[Gmail]: https://velog.io/@imysh578
-[Linkedin]: https://linkedin.com/in/
+[Linkedin]: https://linkedin.com/in/김채현-kimchaehyeon
