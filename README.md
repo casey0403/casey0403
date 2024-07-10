@@ -14,8 +14,3 @@
         <img src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white">
     </div>
 </div><br>
-
-<!-- Contact -->
-[<img align="left" alt="SOKURI_CODE | LinkedIn" width="48px" src="https://img.icons8.com/color/48/000000/linkedin.png" />][Linkedin]
-
-[Linkedin]: https://linkedin.com/in/김채현-kimchaehyeon
