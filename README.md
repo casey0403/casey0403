@@ -11,6 +11,12 @@
         <img src="https://img.shields.io/badge/couchbase-EA2328?style=for-the-badge&logo=Couchbase&logoColor=white">
         <img src="https://img.shields.io/badge/apachekafka-231F20?style=for-the-badge&logo=Kafka&logoColor=white">
         <img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white">
-          <img src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white">
+        <img src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white">
     </div>
 </div><br>
+
+[<img align="left" alt="SOKURI_CODE | velog" width="48px" src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=000000" />][Gmail]
+[<img align="left" alt="SOKURI_CODE | LinkedIn" width="48px" src="https://img.icons8.com/color/48/000000/linkedin.png" />][Linkedin]
+
+[Gmail]: https://velog.io/@imysh578
+[Linkedin]: https://linkedin.com/in/
